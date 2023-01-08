@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Encritador</title>
+</head>
+<body>
+    
+    <section class="container">
+        <header>
+            <img class="logo" src="./assets/imgs/Vector.png" alt="logo">
+            <h1 class="tittle">Encripdador y desencritptador de Textos</h1>
+        </header>
+
+        <section class="izquierda">
+            <input class="text-input" type="text" pattern="[a-z]*" onkeyup="this.value = this.value.toLowerCase();" name="input-texto" id="inputtexto" placeholder="Ingrese el aquí el texto">
+        </section>
+
+        <section class="derecha">
+            <figure class="pic">
+                <img src="./assets/imgs/Muñeco.png" id="imgder" alt="muñeco">
+            </figure>
+            <h2 class="tittle"  id="texto">Ningún mensaje fue encontrado</h2>
+            <textarea id="texto2" >Ingresa el texto que desees encriptar o desenciptar.</textarea>
+            <button type="button" id="copiar" onclick="copyText()">¡Copiar!</button>
+            
+        </section>
+
+        <section class="btns-izquierda">
+            <p>Sólo letra minusculas y sin acento</p>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()">desencriptar!</button>
+            <button type="button" id="recarga" onclick="location.reload()">Recargar página</button>
+        </section>
+
+    </section>
+
+<script src="./assets/Js/script.js"> </script>
+    
+</body>
+</html>
